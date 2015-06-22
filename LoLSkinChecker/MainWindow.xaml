@@ -1,0 +1,32 @@
+﻿<Controls:MetroWindow x:Class="LoLSkinChecker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"  
+        xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LoLSkinChecker" Height="488.062" Width="684.862"
+        EnableDWMDropShadow="True"
+        ResizeMode="CanResizeWithGrip"
+        WindowStartupLocation="CenterScreen" 
+        MinHeight="400" 
+        MinWidth="600" 
+        Loaded="MetroWindow_Loaded"
+        >
+
+
+
+    <Grid>
+
+        <Button x:Name="newBtn" Content="New" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="75" RenderTransformOrigin="-2.23,-4.435" VerticalContentAlignment="Bottom" IsEnabled="False" Click="newBtn_Click"/>
+        <ListView x:Name="skinListView" Margin="10,15,10,61" ScrollViewer.HorizontalScrollBarVisibility="Disabled" VerticalContentAlignment="Top">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel />
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+        </ListView>
+        <Controls:ProgressRing x:Name="progressRing" Height="36" VerticalAlignment="Top" Margin="10,412,626,0" Width="41"/>
+        <Label x:Name="progressLabel" Content="Label" HorizontalAlignment="Left" Margin="56,417,0,0" VerticalAlignment="Top" Width="135"/>
+        <Label x:Name="skinsLabel" Content="Label" HorizontalAlignment="Right" Margin="0,0,85,9" VerticalAlignment="Bottom" Width="115"/>
+
+    </Grid>
+</Controls:MetroWindow>
