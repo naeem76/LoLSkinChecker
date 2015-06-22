@@ -11,3 +11,12 @@ Done
 ToDo
  - Export Skin Names
  - Export PictureShot
+
+Required Libs
+ - PVPNetConnect
+ - MahApps
+ - NewtonsoftJSON
+
+
+Credits and Inspiration
+ - Madk's Account Checker and LegendaryClient
